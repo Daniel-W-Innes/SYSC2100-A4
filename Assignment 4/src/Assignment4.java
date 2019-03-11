@@ -61,6 +61,25 @@ public class Assignment4 {
     }
 
     public static int convertToNumber (String str){
-        return Integer.parseInt(str.replaceAll("\\s+",""));
+        Queue<Character> outputQueue = new LinkedList<>();
+        int output = 0;
+        char c;
+        for (int i = 0; i < str.length(); i++) {
+            c = str.charAt(i);
+            if(Character.isDigit(c)){
+                outputQueue.add(c);
+            }
+        }
+        int size = (int) Math.pow(10,outputQueue.size());
+        for (int i = 0; i < outputQueue.size(); i++) {
+            output += outputQueue.peek() * size;
+            outputQueue.remove();
+            size /=10;
+        }
+        return Integer.parseInt(str.replaceAll("\\D+",""));
+    }
+
+    public static int convertToNumberV2 (String str){
+        return Integer.parseInt(str.replaceAll("\\D+",""));
     }
 }

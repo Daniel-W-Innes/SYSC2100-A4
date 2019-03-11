@@ -1,6 +1,7 @@
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class Assignment4Test {
@@ -44,7 +45,7 @@ class Assignment4Test {
         assertTrue(Assignment4.isInLanguage("ABCFCBA"));
         assertTrue(Assignment4.isInLanguage("bffrgrffb"));
         assertFalse(Assignment4.isInLanguage("dsagnag"));
-        assertFalse(Assignment4.isInLanguage("bafbaplpogdbadf"));
+        assertFalse(Assignment4.isInLanguage("bffrgrffbo"));
     }
 
     @Test

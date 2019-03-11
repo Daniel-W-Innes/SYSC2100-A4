@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 
 public class Assignment4 {
 
@@ -45,6 +47,8 @@ public class Assignment4 {
     }
 
     public static boolean isInLanguage (String str){
+        if(str.length() % 2 == 0 || str.isEmpty())
+            return false;
         Stack<Character> wprime = new Stack<>();
         Queue<Character> w = new LinkedList<>();
         for (int i = 0; i < str.length()/2; i++) {
@@ -61,22 +65,24 @@ public class Assignment4 {
     }
 
     public static int convertToNumber (String str){
-        Queue<Character> outputQueue = new LinkedList<>();
+        Queue<Integer> outputQueue = new LinkedList<>();
         int output = 0;
         char c;
         for (int i = 0; i < str.length(); i++) {
             c = str.charAt(i);
             if(Character.isDigit(c)){
-                outputQueue.add(c);
+                outputQueue.add(Character.getNumericValue(c));
             }
         }
-        int size = (int) Math.pow(10,outputQueue.size());
-        for (int i = 0; i < outputQueue.size(); i++) {
-            output += outputQueue.peek() * size;
+        int pow = (int) Math.pow(10,outputQueue.size()-1);
+        int size = outputQueue.size();
+        for (int i = 0; i < size; i++) {
+            assert (((double)output) + outputQueue.peek() * pow < Integer.MAX_VALUE);
+            output += outputQueue.peek() * pow;
             outputQueue.remove();
-            size /=10;
+            pow /= 10;
         }
-        return Integer.parseInt(str.replaceAll("\\D+",""));
+        return output;
     }
 
     public static int convertToNumberV2 (String str){

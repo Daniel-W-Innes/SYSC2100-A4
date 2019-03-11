@@ -2,12 +2,27 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+/**
+ * @author Daniel W innes 10106175
+ */
 public class Assignment4 {
 
+    /**
+     * Sort theArray in in place using a recursive version of selection sort
+     * @param theArray the array to sort
+     * @param <T> the data type of the members of the array
+     */
     public static <T extends Comparable<? super T>> void recursiveSelectionSort (T[] theArray){
         recursiveSelectionSort(theArray,0);
     }
 
+    /**
+     * Sort theArray in in place using a recursive version of selection sort
+     * This should be private but can't be because of the assignment restrictions
+     * @param theArray the array to sort
+     * @param n the split point of the array should be 0 on the first call
+     * @param <T> the data type of the members of the array
+     */
     public static <T extends Comparable<? super T>> void recursiveSelectionSort (T[] theArray, int n){
         if(n != theArray.length){
             T temp;
@@ -26,10 +41,22 @@ public class Assignment4 {
         }
     }
 
+    /**
+     * Sort theArray in in place using a recursive version of bubble sort
+     * @param theArray the array to sort
+     * @param <T> the data type of the members of the array
+     */
     public static <T extends Comparable<? super T>> void recursiveBubbleSort (T[] theArray){
         recursiveBubbleSort(theArray, theArray.length);
     }
 
+    /**
+     * Sort theArray in in place using a recursive version of bubble sort
+     * This should be private but can't be because of the assignment restrictions
+     * @param theArray the array to sort
+     * @param n the split point of the array should be the array length on the first call
+     * @param <T> the data type of the members of the array
+     */
     public static <T extends Comparable<? super T>> void recursiveBubbleSort (T[] theArray, int n){
         if(n > 0){
             int swapped = 0;
@@ -46,6 +73,11 @@ public class Assignment4 {
         }
     }
 
+    /**
+     * Test if str is in the language
+     * @param str the string to test
+     * @return if the str is in the language
+     */
     public static boolean isInLanguage (String str){
         if(str.length() % 2 == 0 || str.isEmpty())
             return false;
@@ -64,6 +96,14 @@ public class Assignment4 {
         return true;
     }
 
+
+    /**
+     * Convert the str to a int
+     * This is a horrible way of solving the problem but the assignment demands you use a queue
+     * return Integer.parseInt(str.replaceAll("\\D+","")); is a one line solution
+     * @param str the string to convert
+     * @return the str as a int
+     */
     public static int convertToNumber (String str){
         Queue<Integer> outputQueue = new LinkedList<>();
         int output = 0;
@@ -83,9 +123,5 @@ public class Assignment4 {
             pow /= 10;
         }
         return output;
-    }
-
-    public static int convertToNumberV2 (String str){
-        return Integer.parseInt(str.replaceAll("\\D+",""));
     }
 }

@@ -8,43 +8,43 @@ import java.util.Stack;
 public class Assignment4 {
 
     /**
-     * Sort theArray in in place using a recursive version of selection sort
+     * Sort theArray in in place using a recursive version of selection sort.
      *
      * @param theArray the array to sort
      * @param <T>      the data type of the members of the array
      */
     public static <T extends Comparable<? super T>> void recursiveSelectionSort(T[] theArray) {
-        recursiveSelectionSort(theArray, 0);
+        recursiveSelectionSort(theArray, theArray.length);
     }
 
     /**
-     * Sort theArray in in place using a recursive version of selection sort
-     * This should be private but can't be because of the assignment restrictions
+     * Sort theArray in in place using a recursive version of selection sort.
+     * This should be private but can't be because of the assignment restrictions.
      *
      * @param theArray the array to sort
-     * @param n        the split point of the array should be 0 on the first call
+     * @param n        the split point of the array should be array length on the first call
      * @param <T>      the data type of the members of the array
      */
     public static <T extends Comparable<? super T>> void recursiveSelectionSort(T[] theArray, int n) {
-        if (n != theArray.length) {
+        if (n != 0) {
             T temp;
-            int iMin = n;
-            for (int i = n + 1; i < theArray.length; i++) {
-                if (theArray[i].compareTo(theArray[iMin]) < 0) {
-                    iMin = i;
+            int iMax = n - 1;
+            for (int i = n - 2; i >= 0; i--) {
+                if (theArray[i].compareTo(theArray[iMax]) > 0) {
+                    iMax = i;
                 }
             }
-            if (iMin != n) {
-                temp = theArray[n];
-                theArray[n] = theArray[iMin];
-                theArray[iMin] = temp;
+            if (iMax != n) {
+                temp = theArray[n -1];
+                theArray[n -1] = theArray[iMax];
+                theArray[iMax] = temp;
             }
-            recursiveSelectionSort(theArray, n + 1);
+            recursiveSelectionSort(theArray, n -1);
         }
     }
 
     /**
-     * Sort theArray in in place using a recursive version of bubble sort
+     * Sort theArray in in place using a recursive version of bubble sort.
      *
      * @param theArray the array to sort
      * @param <T>      the data type of the members of the array
@@ -54,8 +54,8 @@ public class Assignment4 {
     }
 
     /**
-     * Sort theArray in in place using a recursive version of bubble sort
-     * This should be private but can't be because of the assignment restrictions
+     * Sort theArray in in place using a recursive version of bubble sort.
+     * This should be private but can't be because of the assignment restrictions.
      *
      * @param theArray the array to sort
      * @param n        the split point of the array should be the array length on the first call
@@ -78,7 +78,7 @@ public class Assignment4 {
     }
 
     /**
-     * Test if str is in the language
+     * Test if str is in the language.
      *
      * @param str the string to test
      * @return if the str is in the language

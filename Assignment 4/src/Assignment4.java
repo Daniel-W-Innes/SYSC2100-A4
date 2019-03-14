@@ -8,13 +8,23 @@ import java.util.Stack;
 public class Assignment4 {
     private static <T> Boolean inputValidation(T[] theArray, int n) {
         //check if theArray and n are valid for use by the sorting algorithm
+        if(inputValidation(theArray)){
+            if (n != theArray.length) {
+                throw new IllegalArgumentException("n should be the array length on the first call");
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static <T> Boolean inputValidation(T[] theArray) {
+        //check if theArray and n are valid for use by the sorting algorithm
         if (theArray == null) {
             throw new IllegalArgumentException("theArray can not be null");
         } else if (theArray.length == 0) {
             throw new IllegalArgumentException("theArray can not be empty");
-        } else if (n != theArray.length) {
-            throw new IllegalArgumentException("n should be the array length on the first call");
-        } else {
+        }else{
             return true;
         }
     }
@@ -26,7 +36,8 @@ public class Assignment4 {
      * @param <T>      the data type of the members of the array
      */
     public static <T extends Comparable<? super T>> void recursiveSelectionSort(T[] theArray) {
-        recursiveSelectionSort(theArray, theArray.length);
+        if (inputValidation(theArray))
+            RSS(theArray, theArray.length);
     }
 
     /**
@@ -70,7 +81,8 @@ public class Assignment4 {
      * @param <T>      the data type of the members of the array
      */
     public static <T extends Comparable<? super T>> void recursiveBubbleSort(T[] theArray) {
-        recursiveBubbleSort(theArray, theArray.length);
+        if (inputValidation(theArray))
+            rbs(theArray, theArray.length);
     }
 
     /**

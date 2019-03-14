@@ -36,6 +36,13 @@ class Assignment4Test {
         assertArrayEquals(ANSNEG, passNeg);
     }
 
+    @Test
+    void recursiveSelectionSortErrorTest() {
+        pass = Arrays.copyOf(PASS, PASS.length);
+        assertThrows(IllegalArgumentException.class,()-> Assignment4.recursiveSelectionSort(null));
+        assertThrows(IllegalArgumentException.class,()-> Assignment4.recursiveSelectionSort(new Integer[]{}));
+        assertThrows(IllegalArgumentException.class,()-> Assignment4.recursiveSelectionSort(pass,pass.length/2));
+    }
 
     @Test
     void recursiveBubbleSortTestSimple() {
@@ -56,6 +63,14 @@ class Assignment4Test {
         passNeg = Arrays.copyOf(PASSNEG, PASSNEG.length);
         Assignment4.recursiveBubbleSort(passNeg);
         assertArrayEquals(ANSNEG, passNeg);
+    }
+
+    @Test
+    void recursiveBubbleSortErrorTest() {
+        pass = Arrays.copyOf(PASS, PASS.length);
+        assertThrows(IllegalArgumentException.class,()-> Assignment4.recursiveBubbleSort(null));
+        assertThrows(IllegalArgumentException.class,()-> Assignment4.recursiveBubbleSort(new Integer[]{}));
+        assertThrows(IllegalArgumentException.class,()-> Assignment4.recursiveBubbleSort(pass,pass.length/2));
     }
 
     @Test

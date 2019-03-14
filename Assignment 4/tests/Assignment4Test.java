@@ -70,6 +70,7 @@ class Assignment4Test {
     void convertToNumberTest() {
         assertEquals(525455432, Assignment4.convertToNumber("52 545 54 32 "));
         assertEquals(568328633, Assignment4.convertToNumber("568 32 8 63 3"));
+        assertThrows(IllegalArgumentException.class,()-> Assignment4.convertToNumber("999999999999999999999"));
     }
 
 }

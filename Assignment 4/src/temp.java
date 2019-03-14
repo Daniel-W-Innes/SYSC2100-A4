@@ -8,5 +8,7 @@ public class temp {
         Arrays.sort(ansSimple);
         System.out.println(Arrays.toString(ans));
         System.out.println(Arrays.toString(ansSimple));
+        int i = Integer.MAX_VALUE+1;
+        System.out.println(i);
     }
 }

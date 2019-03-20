@@ -125,6 +125,8 @@ public class Assignment4 {
     public static boolean isInLanguage(String str) {
         if (str.length() % 2 == 0 || str.isEmpty())
             return false;
+        if (str.charAt(str.length() / 2) != '$')
+            return false;
         Stack<Character> wprime = new Stack<>();
         Queue<Character> w = new LinkedList<>();
         for (int i = 0; i < str.length() / 2; i++) {

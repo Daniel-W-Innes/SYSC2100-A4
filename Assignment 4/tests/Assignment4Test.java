@@ -75,8 +75,10 @@ class Assignment4Test {
 
     @Test
     void isInLanguageTest() {
-        assertTrue(Assignment4.isInLanguage("ABCFCBA"));
-        assertTrue(Assignment4.isInLanguage("bffrgrffb"));
+        assertFalse(Assignment4.isInLanguage("ABCFCBA"));
+        assertFalse(Assignment4.isInLanguage("bffrhrffb"));
+        assertTrue(Assignment4.isInLanguage("ABC$CBA"));
+        assertTrue(Assignment4.isInLanguage("bffr$rffb"));
         assertFalse(Assignment4.isInLanguage("dsagnag"));
         assertFalse(Assignment4.isInLanguage("bffrgrffbo"));
     }

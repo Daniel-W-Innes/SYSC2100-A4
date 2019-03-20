@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ebb24968-362e-4b8a-b51a-810488751d9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment 4/Assignment4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment 4/Assignment4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Assignment4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Assignment4Test.java" afterDir="false" />
     </list>
@@ -39,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Assignment4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="181" column="5" lean-forward="true" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="125" column="51" lean-forward="true" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,10 +52,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Assignment4Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="64" column="43" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+            <state relative-caret-position="238">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/junit-jupiter-api-5.4.0.jar!/org/junit/jupiter/api/Assertions.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
+              <folding>
+                <element signature="e#2270#2271#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,8 +99,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Assignment4Test.java" />
         <option value="$PROJECT_DIR$/src/temp.java" />
-        <option value="$PROJECT_DIR$/src/Assignment4.java" />
         <option value="$PROJECT_DIR$/tests/Assignment4Test.java" />
+        <option value="$PROJECT_DIR$/src/Assignment4.java" />
       </list>
     </option>
   </component>
@@ -102,7 +115,21 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Assignment 4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment 4" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
@@ -115,7 +142,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552580580932" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553113053316" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -206,7 +233,10 @@
       <workItem from="1552417143951" duration="193000" />
       <workItem from="1552432695937" duration="2609000" />
       <workItem from="1552567614026" duration="8418000" />
-      <workItem from="1552577536352" duration="2574000" />
+      <workItem from="1552577536352" duration="2825000" />
+      <workItem from="1552681612032" duration="242000" />
+      <workItem from="1553013391112" duration="322000" />
+      <workItem from="1553112582536" duration="471000" />
     </task>
     <task id="LOCAL-00001" summary="Rewrite to follow the assignment, even though it was better before.">
       <created>1552339943525</created>
@@ -250,31 +280,17 @@
       <option name="project" value="LOCAL" />
       <updated>1552575850703</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix validation and add test two cases">
+      <created>1552580723939</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552580723939</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Assignment_4 - 2019.03.14 at 12h 06m 22s.xml">
-      <configuration name="All in Assignment 4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Assignment_4 - 2019.03.14 at 12h 08m 44s.xml">
-      <configuration name="All in Assignment 4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Assignment_4 - 2019.03.14 at 12h 08m 47s.xml">
-      <configuration name="All in Assignment 4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Assignment_4 - 2019.03.14 at 12h 10m 07s.xml">
-      <configuration name="All in Assignment 4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Assignment_4 - 2019.03.14 at 12h 16m 07s.xml">
-      <configuration name="All in Assignment 4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Assignment_4 - 2019.03.14 at 12h 16m 18s.xml">
-      <configuration name="All in Assignment 4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Assignment4Test_recursiveSelectionSortErrorTest - 2019.03.14 at 12h 16m 47s.xml">
-      <configuration name="Assignment4Test.recursiveSelectionSortErrorTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Assignment4Test_recursiveSelectionSortErrorTest - 2019.03.14 at 12h 18m 06s.xml">
       <configuration name="Assignment4Test.recursiveSelectionSortErrorTest" configurationId="JUnit" />
     </history-entry>
@@ -284,15 +300,36 @@
     <history-entry file="All_in_Assignment_4 - 2019.03.14 at 12h 18m 23s.xml">
       <configuration name="All in Assignment 4" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_Assignment_4 - 2019.03.20 at 16h 13m 01s.xml">
+      <configuration name="All in Assignment 4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Assignment_4 - 2019.03.20 at 16h 13m 27s.xml">
+      <configuration name="All in Assignment 4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Assignment_4 - 2019.03.20 at 16h 16m 12s.xml">
+      <configuration name="All in Assignment 4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Assignment_4 - 2019.03.20 at 16h 16m 41s.xml">
+      <configuration name="All in Assignment 4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Assignment_4 - 2019.03.20 at 16h 17m 10s.xml">
+      <configuration name="All in Assignment 4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Assignment_4 - 2019.03.20 at 16h 17m 16s.xml">
+      <configuration name="All in Assignment 4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Assignment_4 - 2019.03.20 at 16h 17m 29s.xml">
+      <configuration name="All in Assignment 4" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35396000" />
+    <option name="totallyTimeSpent" value="36682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1933" height="1063" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14986667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15146667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -301,7 +338,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29581994" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29581994" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3858521" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,16 +417,17 @@
     <MESSAGE value="formatting" />
     <MESSAGE value="Switch selection sort to sort from From the tail end" />
     <MESSAGE value="Input validation and more comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Input validation and more comments" />
+    <MESSAGE value="fix validation and add test two cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix validation and add test two cases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Assignment4.java</url>
-          <line>51</line>
+          <line>127</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -496,17 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-jupiter-api-5.4.0.jar!/org/junit/jupiter/api/Assertions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="1513" selection-start-line="1513" selection-end-line="1513" />
-          <folding>
-            <element signature="e#7919#7920#0" expanded="true" />
-            <element signature="e#7978#7979#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/junit-platform-commons-1.4.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -523,18 +550,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Assignment4Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="64" column="43" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+        <state relative-caret-position="238">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-jupiter-api-5.4.0.jar!/org/junit/jupiter/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#2270#2271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Assignment4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="181" column="5" lean-forward="true" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="125" column="51" lean-forward="true" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
